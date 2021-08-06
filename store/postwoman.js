@@ -35,6 +35,11 @@ export const SETTINGS_KEYS = [
   "EXTENSIONS_ENABLED",
 
   /**
+   * A boolean value indicating whether Telemetry is enabled.
+   */
+  "TELEMETRY_ENABLED",
+
+  /**
    * A boolean value indicating whether to use the URL bar experiments
    */
   "EXPERIMENTAL_URL_BAR_ENABLED",
@@ -42,26 +47,6 @@ export const SETTINGS_KEYS = [
 
 export const state = () => ({
   settings: {},
-  collections: [
-    {
-      name: "My Collection",
-      folders: [],
-      requests: [],
-    },
-  ],
-  collectionsGraphql: [
-    {
-      name: "My GraphQL Collection",
-      folders: [],
-      requests: [],
-    },
-  ],
-  environments: [
-    {
-      name: "My Environment Variables",
-      variables: [],
-    },
-  ],
   editingEnvironment: {},
   selectedRequest: {},
   selectedGraphqlRequest: {},
